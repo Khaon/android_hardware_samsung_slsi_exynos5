@@ -11,6 +11,8 @@ LOCAL_C_INCLUDES += \
 	frameworks/native/include \
 	system/media/camera/include
 
+LOCAL_CLANG_CFLAGS += -Wno-c++11-narrowing
+
 LOCAL_SRC_FILES:= \
 	SignalDrivenThread.cpp \
 	MetadataConverter.cpp \

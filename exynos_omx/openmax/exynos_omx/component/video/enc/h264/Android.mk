@@ -3,6 +3,8 @@ include $(CLEAR_VARS)
 
 LOCAL_MODULE_TAGS := optional
 
+LOCAL_CLANG_CFLAGS += -Wno-int-conversion
+
 LOCAL_SRC_FILES := \
 	Exynos_OMX_H264enc.c \
 	library_register.c
